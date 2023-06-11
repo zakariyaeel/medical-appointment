@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bgcolor_prim: #92E3A9;
+    --text: #707070;
+    --bgcolor_sec: #e4e9f7;
+}
+
+body{
+    background-color: var(--bgcolor_sec);
+    height: 100vh;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bgcolor_prim);
+    width: 270px;
+    height: 100%;
+    padding: 10px 10px;
+}
+.sidebar header .username{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+hr{
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.sidebar .menu-bar{
+    margin-top: 10px;
+}
+.sidebar .menu-bar li{
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.sidebar .menu-bar li a{
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+.sidebar .menu-bar li a:hover{
+    background-color: var(--bgcolor_sec);
+}
+
+.sidebar .menu-bar{
+    position: relative;
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
